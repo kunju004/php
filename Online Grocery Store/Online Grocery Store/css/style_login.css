@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    font-family: Arial;
+}
+body{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh ;
+    background-image: url(images/bg7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@media screen and (max-width: 450px){
+    body{
+        padding: 15px;
+    }
+}
+.login{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff30;
+    backdrop-filter: blur(20px);
+    border: 2px solid #ffffff30;
+    border-radius: 10px;
+    box-shadow: 0 10px;
+    padding: 40px;
+    overflow: hidden;
+}
+.login h1{
+    color: black;
+    font-size: 3em;
+    margin-bottom: 40px;
+    position: relative;
+}
+.login input{
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: 2px solid #ffffff30;
+    background-color: #ffffff30;
+    color: black;
+    margin: 10px 0;
+    padding: 0 15px;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.login input:focus{
+    border-color: #ffffff;
+    transition: 0.4s;
+}
+.login input::placeholder{
+    color: black;
+    letter-spacing: 1px;
+}
+.login input:focus::placeholder{
+    opacity: 0;
+}
+.login button{
+    width: 100%;
+    height: 50px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin: 15px 0;
+    font-size: 1.7em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #303e5c;
+    box-shadow: 0 10px 20px #303e5c69 ;
+    cursor: pointer;
+}
+.register p{
+    color: black;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+}
+.register a{
+    color: black;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
+.error p,.message p{
+    color: black;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+}
